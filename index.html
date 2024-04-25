@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>Weather</title>
+</head>
+
+<body class='overflow-hidden'>
+    <div class="relative text-white wrapper">
+        <header class="mb-5">
+            <div class="header__container">
+                <h1 class="py-5 text-5xl font-bold text-center weather">Weather</h1>
+                <div class='flex gap-2.5 items-center justify-center'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-cloud-sun-rain">
+                        <path d="M12 2v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="M20 12h2" />
+                        <path d="m19.07 4.93-1.41 1.41" />
+                        <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128" />
+                        <path d="M3 20a5 5 0 1 1 8.9-4H13a3 3 0 0 1 2 5.24" />
+                        <path d="M11 20v2" />
+                        <path d="M7 19v2" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-cloudy">
+                        <path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                        <path d="M22 10a3 3 0 0 0-3-3h-2.207a5.502 5.502 0 0 0-10.702.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-cloud-rain-wind">
+                        <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+                        <path d="m9.2 22 3-7" />
+                        <path d="m9 13-3 7" />
+                        <path d="m17 13-3 7" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-snowflake">
+                        <line x1="2" x2="22" y1="12" y2="12" />
+                        <line x1="12" x2="12" y1="2" y2="22" />
+                        <path d="m20 16-4-4 4-4" />
+                        <path d="m4 8 4 4-4 4" />
+                        <path d="m16 4-4 4-4-4" />
+                        <path d="m8 20 4-4 4 4" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-sun">
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+        <main class="relative main">
+            <div class='relative z-10 grid gap-5 p-2 mb-10'>
+                <label class='w-full border border-white rounded-xl max-w-[500px] mx-auto'>
+                    <input class='w-full p-2 text-2xl text-center capitalize duration-300 bg-transparent bg-gray-800 border-gray-400 outline-none rounded-xl focus:placeholder:hidden' type="text"
+                           placeholder='location'>
+                </label>
+                <button class='py-3 max-w-[300px] mx-auto px-5 text-lg border btn bg-blue-700 rounded-xl hover:bg-blue-900 duration-300' type="button">Show Weather</button>
+            </div>
+            <div class="w-full weather__container weather"></div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+
+            </div>
+        </footer>
+        <video class='absolute inset-0 w-full -z-10' muted autoplay loop src="./assets/video/video.mp4"></video>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
