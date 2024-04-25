@@ -37,7 +37,7 @@ const renderWeather = data => {
             <p><strong>Max Temperature:</strong> ${maxTemperature}°C</p>
             <p><strong>Wind Speed:</strong> ${windSpeed} m/s</p>
             <div class="flex items-center gap-2">
-                <p>${description}</p>
+                <p class="desc">${description}</p>
                 <img class="w-16 h-16" src="${icon}" alt="Weather icon">
             </div>
         </div>
