@@ -10,7 +10,7 @@ const setCountry = e => (country = e.target.value)
 const getWeatherData = async () => {
     try {
         if (country) {
-            const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${WEATHER_API_KEY}')
+            const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=54b1407dcc4d3ca0d88eefdeca4dd8a4')
             const data = await response.json()
             console.log(data)
             renderWeather(data)
